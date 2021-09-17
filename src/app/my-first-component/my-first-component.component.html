@@ -1,0 +1,38 @@
+
+<mat-radio-group
+aria-labelledby="example-radio-group-label"
+class="example-radio-group"
+[(ngModel)]="operacija">
+<mat-radio-button class="example-radio-button" *ngFor="let op of operacije" [value]="op">
+  {{op}}
+</mat-radio-button>
+</mat-radio-group><br><br>
+
+
+<mat-form-field>
+
+
+    <mat-label>Prvi element</mat-label>
+    <input matInput type="number" [(ngModel)]="e1">
+
+</mat-form-field>
+
+
+<mat-form-field>
+
+    <mat-label>Drugi element</mat-label>
+    <input matInput type="number" [(ngModel)]="e2">
+
+</mat-form-field>
+
+
+    <button mat-button color="primary" *ngIf="operacija === 'saberi'" (click)="saberi()">Saberi</button>
+    <button mat-button color="primary" *ngIf="operacija === 'oduzmi'" (click)="oduzmi()">Oduzmi</button>
+    <button mat-button color="primary" *ngIf="operacija === 'mnozi'" (click)="mnozi()">Mnozi</button>
+    <button mat-button color="primary" *ngIf="operacija === 'deli'" (click)="deli()">Deli</button><br><br>
+
+    <h2 [ngClass]="{'red' : operacija === 'saberi', 'blue' : operacija === 'oduzmi', 'green' : operacija === 'mnozi', 'orange' : operacija === 'deli'}"> Rezultat: {{rezultat}}</h2>
+
+
+    
+

@@ -1,0 +1,45 @@
+
+
+
+
+
+.example-radio-group{
+
+     display: flex;
+     justify-content: space-between;
+     gap:50px;
+}
+
+
+
+
+.mat-primary{
+    align-items: center;
+    color: #ffd740;
+    font-weight: 800;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+}
+
+
+.red{
+    
+    color: darkred;
+}
+
+.blue{
+
+    color: cornflowerblue;
+
+}
+
+.green{
+    color: darkgreen;
+}
+
+.orange{
+    color: orange;
+}
